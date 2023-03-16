@@ -33,3 +33,6 @@ def test_multiplicacion():
 @pytest.mark.xfail(reason = "Funcion a depricar")
 def test_division():
     assert division(3, 0) == 1
+
+def test_modulo():
+    assert modulo(2, 1) == 0
