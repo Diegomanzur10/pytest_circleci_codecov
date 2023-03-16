@@ -17,6 +17,11 @@ import pytest
             3,
             5,
             8
+        ),
+        (
+            10,
+            10,
+            20
         )
     ],
     ids = [
@@ -36,3 +41,6 @@ def test_division():
 
 def test_modulo():
     assert modulo(2, 1) == 0
+
+def test_resta():
+    assert resta(3, 2) == 1
