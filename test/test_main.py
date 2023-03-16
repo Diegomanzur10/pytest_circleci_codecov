@@ -17,11 +17,17 @@ import pytest
             3,
             5,
             8
+        ),
+        (
+            10,
+            10,
+            20
         )
     ],
     ids = [
         "Test1",
-        "Test2"
+        "Test2",
+        "Test3"
     ]
 )
 def test_suma(a, b, val_exp):
@@ -36,3 +42,6 @@ def test_division():
 
 def test_modulo():
     assert modulo(2, 1) == 0
+
+def test_resta():
+    assert resta(3, 2) == 1
